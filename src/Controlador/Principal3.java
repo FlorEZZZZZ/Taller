@@ -4,6 +4,7 @@
  */
 package Controlador;
 
+import Modelo.Segundaria;
 import java.util.Scanner;
 
 /**
@@ -15,10 +16,12 @@ public class Principal3 {
        public static void main(String[] args) {
        
        Scanner sc = new Scanner(System.in);
+           Segundaria sg = new Segundaria();
            
            System.out.println("Escriba la cantidad de productos a registrar: ");
            int cantProductos = sc.nextInt();
        
+           sg.ejecicio3(cantProductos);
        } 
     
 }
