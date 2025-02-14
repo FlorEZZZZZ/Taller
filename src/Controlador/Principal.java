@@ -4,6 +4,7 @@
  */
 package Controlador;
 
+import Modelo.Segundaria;
 import java.util.Scanner;
 
 /**
@@ -11,13 +12,16 @@ import java.util.Scanner;
  * @author APRENDIZ
  */
 public class Principal {
-    
-        public static void main(String[] args) {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        Segundaria sg = new Segundaria();
+
+        System.out.print("Digite el tamaño para los dos vectores: ");
+        int tamañoVector = sc.nextInt();
         
-            Scanner sc = new Scanner(System.in);
         
-            System.out.print("Digite el tamaño del vector: ");
-            int tamañoVector = sc.nextInt();
-        
-        }
+        sg.ejercicio1(tamañoVector);
+    }
 }
