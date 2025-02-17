@@ -20,7 +20,6 @@ public class Segundaria {
         int numPares = 0; // Contador de los numeros pares
         int numImpares1 = 0; // Contador de los numeros impares del vector 1
         int numImpares2 = 0; // Contador de los numeros impares del vector 2
-G
         int[] vector1 = new int[tamañoVector]; // Crear el vector numero 1
         int[] vector2 = new int[tamañoVector]; // Crear el vector numero 2
         
