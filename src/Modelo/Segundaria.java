@@ -87,16 +87,22 @@ public class Segundaria {
         
         
 
-        String[] nombres = new String[tamañoVector];
-        int posicion = 0;
-        String nombre = null;
+        String[] nombres = new String[tamañoVector]; //Se crea el vector para almacenar los nombres
+        int posicion = 0; //  variable donde se guardara la posicion del nombre con mayor cantidad de letras
+        String nombre = null; // variable donde se guardara el nombre con mayor letras
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // Se crea el scanner con el nombre sc
 
-        for (int i = 0; i < tamañoVector; i++) {
+        for (int i = 0; i < tamañoVector; i++) { // ciclo for donde se realizará todo el ejercicio
 
             System.out.println("Escriba el nombre " + (i + 1) + ": ");
-            nombres[i] = sc.nextLine();
+            nombres[i] = sc.nextLine(); 
+
+            /* 
+                Se pide el nombre primeramente en "nombres[i] = sc.nextLine();" y luego en los condicionales se hace el proceso
+                para seleccionar el nombre con mayor cantidad de digitos, cabe aclarar que si hay mas de un nombre con la misma
+                cantidad de digitos el nombre que se digito primero se mantendra.         
+            */
 
             if (i == 0) {
                 nombre = nombres[i];
@@ -113,7 +119,7 @@ public class Segundaria {
 
     public void ejecicio3(int cantProductos) {
 
-        double[] precios = new double[cantProductos];
+        double[] precios = new double[cantProductos]; // se crea el vectorr donde se almacenara el precio de los productos
         Scanner sc = new Scanner(System.in);
 
         for (int i = 0; i < cantProductos; i++) {
@@ -121,7 +127,7 @@ public class Segundaria {
             System.out.println("Producto " + i + ": ");
 
             precios[i] = sc.nextInt();
-            if (precios[i] > 55000) {
+            if (precios[i] > 55000) { // si el valor es superior a 55000 se le dara un 10% de descuento, si no en el siguiente se le dara un 5% de descuento
                 precios[i] = precios[i] - (precios[i] * 0.10);
             } else if (precios[i] <= 55000 && precios[i] > 0) {
                 precios[i] = precios[i] - (precios[i] * 0.05);
@@ -131,7 +137,7 @@ public class Segundaria {
 
         System.out.println("Vector Final");
 
-        for (double precio : precios) {
+        for (double precio : precios) { // se utiliza para sacar el resultado final
             System.out.println(precio);
         }
 
