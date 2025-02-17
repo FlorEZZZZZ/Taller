@@ -104,7 +104,7 @@ public class Segundaria {
                 nombre = nombres[i];
                 posicion = i;
             }
-                no
+                
         }
 
         System.out.println("El nombre con mas caracteres es: " + nombre + "\nPosicion: " + (posicion + 1));
